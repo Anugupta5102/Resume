@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-color: lightblue;
+            display: flex ;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container{
+            position: relative;
+            width: 100%;
+            
+            max-width: 1000px;
+            min-height: 1000px;
+            background: rgb(243, 226, 199);
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+
+        }
+        .container .left{
+            position: relative;
+            background: rgb(2, 2, 112);
+            padding: 40px;
+        }
+        .contact{
+            padding-top: 40px;
+        }
+        .title{
+            text-transform: uppercase;
+            color: aliceblue;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        .contact ul{
+            position: relative;
+            padding-left: 0%;
+        }
+        .contact ul li{
+            position: relative;
+            margin: 10px 0;
+            list-style-type: none;
+            cursor: pointer;
+            
+        }
+        .contact ul li .icon{
+            display: inline-block;
+            width: 30px;
+            font-size: 18px;
+            color:rgb(96, 185, 248);
+        }
+        .contact ul li span{
+            color: aliceblue;
+            font-weight: 300px;
+        }
+        .contact.edu li{
+            margin-bottom: 15px;
+        }
+        .contact.edu h5{
+
+            color:rgb(96, 185, 248);
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .contact.edu h4:nth-child(2)
+        {
+            color:aliceblue;
+            font-weight: 500;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .contact.edu h4{
+            color:aliceblue;
+            font-weight: 300;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .contact.lang .percent{
+                    position: relative;
+                    width: 100%;
+                    height: 6px;
+                    background: rgb(11, 10, 10);
+                    display: block;
+                    margin-top: 5px;    
+        }
+        .contact.lang .percent div{
+            position: relative;
+            top:0;
+            left: 0;
+            height: 100%;
+            background:rgb(96, 185, 248); 
+        }
+        .profile{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 30px;
+            border-bottom: 1px solid gainsboro;
+
+            
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            
+
+        }
+
+        .container .right{
+            position: relative;
+            background:whitesmoke;
+            padding: 40px;
+        }
+        .name{
+            font-size: 60px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold ;
+            text-align: center;
+            color: darkslategrey;
+            text-transform: uppercase;
+            
+            
+        }
+        .about{
+            margin-bottom: 50px;
+        }
+        .title2{
+            color:rgb(2, 2, 81);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        .title2 h3{
+            color:rgb(2, 2, 81);
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+        <div class="profile">
+            <div class="imgB">
+                <img src="C:\Users\DELL\Downloads\WhatsApp Image 2024-03-12 at 9.09.26 AM.jpeg" alt="pic">
+            </div>
+        </div>
+            <div class="contact">
+            <h3 class="title">Phone</h3>
+            <ul>
+                <li>
+                    <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <span class="text">123-456-789</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <span class="text">anushree@gmail.com</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+                    <span class="text">ww.linkedIn.com</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </span>
+                    <span class="text">Aliganj, Lucknow</span>
+                </li>
+            </ul>
+        </div>
+            <div class="contact edu">
+                <h3 class="title">Education</h3>
+                <ul>
+                    <li>
+                        <h5>2021-2025</h5>
+                        <h4>B.tech (IT)</h4>
+                        <h4>Bansal Institute of Engineering and Technology,Lucknow</h4>
+                    </li>
+                    <li>
+                        <h5>2020-2021</h5>
+                        <h4>Intermediate(12th)</h4>
+                        <h4>Mount Carmel College,Lucknow</h4>
+                    </li>
+                    <li>
+                        <h5>2019-2020</h5>
+                        <h4>High School(10th)</h4>
+                        <h4>Mount Carmel College,Lucknow</h4>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact lang">
+                <h3 class="title">Tech Skills</h3>
+                <ul>
+                    <li>
+                        <span class="text">DSA</span>
+                        <span class="percent">
+                        <div style="width: 75%;"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">Java</span>
+                        <span class="percent">
+                            <div style="width: 90%;"></div>
+                            </span>
+
+                    </li>
+                    <li>
+                        <span class="text">C & C++</span>
+                        <span class="percent">
+                            <div style="width: 60%;"></div>
+                            </span>
+
+                    </li>
+                    <li>
+                        <span class="text">HTML,CSS & JS</span>
+                        <span class="percent">
+                            <div style="width: 85%;"></div>
+                            </span>
+
+                    </li>
+                    <li>
+                        <span class="text">Python</span>
+                        <span class="percent">
+                            <div style="width: 70%;"></div>
+                            </span>
+
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <p class="name">Anushree Gupta</p>
+            <div class="about">
+                <h2 class="title2">PROJECTS</h2>
+                <ol>
+                    <li>
+                        <h3><u>Reminder notifications using Python</u></h3>
+                        <p> •	Developed reminder notifications in Python to alert professionals or workers to take breaks during long shifts.<br>
+                            •	Utilized Python libraries such as ‘plyer’ to create user-friendly pop-up messages.<br>
+                            •	LANGUAGE USED:  PYTHON
+                            </p>
+                    </li>
+                    <li>
+                       <h3><u>Voice Based Email for Blind</u></h3>
+                       <p>•	Collaborated on Python-based program to create a user-friendly solution for visually impaired individuals to manage emails using voice commands.<br>
+                        •	Integrated speech recognition technology for seamless voice interaction<br>
+                        •	LANGUAGE USED:  PYTHON
+                        </p> 
+                    </li>
+                </ol>
+            </div>
+            <div class="about">
+                <h2 class="title2">EXPERIENCE</h2>
+                <h3><bold>Intern at Oasis Infobyte as Java Developer</bold></h3>
+                <ul type="square">
+                    <li>            
+	Successfully completed 2 projects- Number Guessing Game and ATM Interface</li>
+	<li>Tools used: VS Code</li>
+	<li>Language : Java</li>
+	<li>GitHub link:  https://github.com/Anugupta5102/OIBSIP </li> 
+                    </li>
+                </ul>
+            </div>
+
+            <div class="about">
+                <h2 class="title2">ROLE OF RESPONSIBILITY</h2>
+                
+                <ul type="square">
+                    <li>
+                    <h3><bold>Member(product dev)</bold></h3>
+                      Designed a Reminder Application using Python for our IT Dept., BIET. My role was to ideate, design, and implement innovative solutions, ensuring the successful creation of the product.                     
+                        CO-EDITOR (Magazine IT Dept.): As the student co-editor, oversaw the production of compelling content reflecting academic and creative achievements within the department.                 </li>
+	<li><h3><bold>Co-Editor</bold></h3>
+                        Designed a Reminder Application using Python for our IT Dept., BIET. My role was to ideate, design, and implement innovative solutions, ensuring the successful creation of the product.                    
+                            	CO-EDITOR (Magazine IT Dept.): As the student co-editor, oversaw the production of compelling content reflecting academic and creative achievements within the department.        </l>
+	
+    <li><h3><bold>Organising Committe Member</bold></h3>                           
+	Played key role as an Organizing Committee Member for the Inter-Institute Startup Competition FIREPITCH'23. Responsibilities involved coordinating logistics to ensure smooth operations during the competition, fostering creativity, and entrepreneurship </li> 
+                </ul>
+            </div>
+
+            <div class="about">
+                <h2 class="title2">SOFT SKILLS</h2>
+                <ul type="square">
+                    <li>
+                       Decision-Making
+                    </li>
+                    <li>
+                        Leadership
+                    </li>
+                    <li>
+                        Communication
+                    </li>
+                    <li>
+                        Team Management
+                    </li>
+                    <li>
+                        Event Coordinator
+                    </li>
+                    <li>
+                        Editor
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
